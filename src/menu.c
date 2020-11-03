@@ -62,7 +62,7 @@ int men()
 {
     char c = 1;
     FILE* fp;
-    fp = fopen("file1", "rb");
+    fp = fopen("file.bin", "rb");
     fseek(fp, 0, SEEK_SET);
     while (1) {
         print();

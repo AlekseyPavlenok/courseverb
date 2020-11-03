@@ -3,7 +3,7 @@
 
 void print_table(FILE* tf)
 {
-    tf = fopen("file1", "rb");
+    tf = fopen("file.bin", "rb");
     int i = 1;
     fread(&t1, sizeof(t1), 1, tf);
     printf("|    Inf:   |   Past:   |  PastPac: |   Trans:  | \n");

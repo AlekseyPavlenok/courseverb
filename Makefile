@@ -57,7 +57,7 @@ build/test/develop.o: src/develop.c
 	gcc -I thirdparty -I src $(CFLAGS) -MMD -c -o $@ $<
 
 clean:
-	rm -rf build/src/*.o build/src/*.d build/test/*.o build/test/*.d bin/*
+	rm -rf build/src/*.o build/src/*.d build/test/*.o build/test/*.d bin/main
 
 FORMAT:
 	clang-format -i $(DIR_SRC)/*.h

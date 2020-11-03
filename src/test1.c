@@ -4,7 +4,7 @@
 void testing_1(FILE* gl)
 {
     srand(time(NULL));
-    gl = fopen("file1", "rb");
+    gl = fopen("file.bin", "rb");
     struct verb* glagol_1;
     struct verb* glagol;
     float procent = 0;

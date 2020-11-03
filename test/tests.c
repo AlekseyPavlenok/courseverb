@@ -3,7 +3,7 @@
 
 CTEST(translate, first_word)
 {
-    FILE* fp = fopen("file1", "rb");
+    FILE* fp = fopen("file.bin", "rb");
     fread(&t1, sizeof(t1), 1, fp);
     fclose(fp);
     struct verb expected = {"be", "was,were", "been", "быть"};
@@ -12,7 +12,7 @@ CTEST(translate, first_word)
 
 CTEST(translate, last_word)
 {
-    FILE* fp = fopen("file1", "rb");
+    FILE* fp = fopen("file.bin", "rb");
     while (!feof(fp)) {
         fread(&t1, sizeof(t1), 1, fp);
     }
@@ -23,7 +23,7 @@ CTEST(translate, last_word)
 
 CTEST(translate, border)
 {
-    FILE* fp = fopen("file1", "rb");
+    FILE* fp = fopen("file.bin", "rb");
     fread(&t1, sizeof(t1), 1, fp);
     fclose(fp);
     struct verb expected = {"learn", "learnt", "learnt", "учить"};
