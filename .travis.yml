@@ -1,0 +1,8 @@
+language: c
+compiler: g++
+dist: xenial
+
+script:
+  - make && make test
+  - git ls-files src/ | xargs clang-format -i && git diff --exit-code
+  - git ls-files test/ | xargs clang-format -i && git diff --exit-code
